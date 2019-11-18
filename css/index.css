@@ -127,6 +127,13 @@ table {
   border-spacing: 0;
 }
 .navigation {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation nav {
+  width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
