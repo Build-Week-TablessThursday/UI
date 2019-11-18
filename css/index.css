@@ -174,8 +174,7 @@ p {
   color: white;
 }
 .navigation .h1 h1:hover {
-  color: black;
-  background: white;
+  text-shadow: 0 0 20px #FF0000, 0 0 20px #0000FF;
 }
 .navigation nav {
   width: 60%;
@@ -199,21 +198,36 @@ p {
   align-items: flex-start;
 }
 .navigation nav a:hover {
-  background-color: white;
-  color: black;
+  text-shadow: 0 0 20px #FF0000, 0 0 20px #0000FF;
 }
 @media (max-width: 800px) {
   .navigation nav a {
     font-size: 1.5rem;
   }
 }
+.navigation {
+  background-color: black;
+  color: white;
+  z-index: 2;
+}
 .container {
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
+}
+.container img {
+  max-width: 100%;
+  position: absolute;
+  filter: blur(5px);
+  z-index: 0;
+  height: 65hv;
 }
 .container .middle {
+  z-index: 1;
+  background-color: black;
   max-width: 800px;
 }
 .container .middle h1 {
