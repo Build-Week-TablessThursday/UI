@@ -1,12 +1,41 @@
 .navigation {
-    padding: 2%;
-    .flexbox (space-between, center);
-    
+    width: 100%;
+    padding: 2% 4%;
+    .flexbox (space-between, baseline);
+    border-bottom: 2px dotted gold;
+    background-color: #212121;
+    .h1{
+        width: 30%;
+        h1{
+        font-family: @tabless-font;
+        font-size: 5rem;
+        color: white;
+        &:hover{
+            color: black;
+            background: white;
+        }
+        }
+    }
     nav {
-        width: 50%;
-        .flexbox (space-between, center);
+        width: 60%;
+        .flexbox (center, center);
+        @media @tablet {
+            width: 80%;
+        }
         a {
+            width: 100%;
+            padding: 2% 1%;
             text-decoration: none;
+            color: white;
+            font-size: 2rem;
+            .flexbox (center, flex-start);
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+            @media @tablet {
+                font-size: 1.5rem;
+            }
         }//end of a
     }//end of nav
 }//end of navig.

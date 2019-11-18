@@ -143,6 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+  font-size: 3rem;
   color: black;
 }
 h2 {
@@ -156,19 +157,55 @@ p {
   line-height: 1.4;
 }
 .navigation {
-  padding: 2%;
+  width: 100%;
+  padding: 2% 4%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  border-bottom: 2px dotted gold;
+  background-color: #212121;
+}
+.navigation .h1 {
+  width: 30%;
+}
+.navigation .h1 h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 5rem;
+  color: white;
+}
+.navigation .h1 h1:hover {
+  color: black;
+  background: white;
 }
 .navigation nav {
-  width: 50%;
+  width: 60%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .navigation nav {
+    width: 80%;
+  }
+}
 .navigation nav a {
+  width: 100%;
+  padding: 2% 1%;
   text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.navigation nav a:hover {
+  background-color: white;
+  color: black;
+}
+@media (max-width: 800px) {
+  .navigation nav a {
+    font-size: 1.5rem;
+  }
 }
 .navigation {
   background-color: black;
