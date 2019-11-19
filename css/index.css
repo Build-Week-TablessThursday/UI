@@ -234,17 +234,17 @@ p {
 .container .middle h1 {
   text-align: center;
 }
-.container {
-  height: 95vh;
+.container-about {
+  height: 90vh;
 }
-.container .hero {
+.container-about .hero {
   width: 100%;
   height: 100%;
   max-width: 100%;
   max-height: 100%;
   position: relative;
 }
-.container .hero::before {
+.container-about .hero::before {
   background-image: url(/img/bg-6.jpg);
   background-size: cover;
   content: "";
@@ -257,7 +257,7 @@ p {
   z-index: -2;
   opacity: 1;
 }
-.container .hero::after {
+.container-about .hero::after {
   background-color: #563d7c;
   content: "";
   display: block;
@@ -269,12 +269,12 @@ p {
   z-index: -1;
   opacity: 0.4;
 }
-.container .hero-message {
+.container-about .hero-message {
   color: white;
   text-shadow: #343a40 2px 2px;
   position: relative;
 }
-.container .hero-message::before {
+.container-about .hero-message::before {
   content: "";
   display: block;
   position: absolute;
@@ -285,13 +285,13 @@ p {
   opacity: 0.4;
   background-color: #343a40;
 }
-.container .hero-title,
-.container .hero-sub-title {
+.container-about .hero-title,
+.container-about .hero-sub-title {
   width: 100%;
   display: block;
   text-align: center;
 }
-.container .hero-title {
+.container-about .hero-title {
   margin: 3% 0;
   text-transform: uppercase;
 }
