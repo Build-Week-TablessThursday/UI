@@ -143,6 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+  font-size: 3rem;
   color: black;
 }
 h2 {
@@ -156,19 +157,54 @@ p {
   line-height: 1.4;
 }
 .navigation {
-  padding: 2%;
+  width: 100%;
+  padding: 2% 4%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  border-bottom: 2px dotted gold;
+  background-color: #212121;
+  z-index: -1;
+}
+.navigation .h1 {
+  width: 30%;
+}
+.navigation .h1 h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 5rem;
+  color: white;
+}
+.navigation .h1 h1:hover {
+  text-shadow: 0 0 20px #FF0000, 0 0 20px #0000FF;
 }
 .navigation nav {
-  width: 50%;
+  width: 60%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .navigation nav {
+    width: 80%;
+  }
+}
 .navigation nav a {
+  width: 100%;
+  padding: 2% 1%;
   text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.navigation nav a:hover {
+  text-shadow: 0 0 20px #FF0000, 0 0 20px #0000FF;
+}
+@media (max-width: 800px) {
+  .navigation nav a {
+    font-size: 1.5rem;
+  }
 }
 .background-image {
   position: absolute;
@@ -491,4 +527,65 @@ html {
   100% {
     transform: scale(1);
   }
+}
+.container {
+  height: 95vh;
+}
+.container .hero {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+.container .hero::before {
+  background-image: url(/img/bg-6.jpg);
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 1;
+}
+.container .hero::after {
+  background-color: #563d7c;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+.container .hero-message {
+  color: white;
+  text-shadow: #343a40 2px 2px;
+  position: relative;
+}
+.container .hero-message::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: 0;
+  min-width: 100%;
+  min-height: 12em;
+  z-index: -1;
+  opacity: 0.4;
+  background-color: #343a40;
+}
+.container .hero-title,
+.container .hero-sub-title {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.container .hero-title {
+  margin: 3% 0;
+  text-transform: uppercase;
 }
