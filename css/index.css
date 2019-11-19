@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Calistoga', cursive;
-  color: black;
+  color: white;
 }
 h1,
 h2,
@@ -144,7 +144,7 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
   font-size: 3rem;
-  color: black;
+  color: white;
 }
 h2 {
   font-size: 3.2rem;
@@ -158,11 +158,10 @@ p {
 }
 .navigation {
   width: 100%;
-  padding: 2% 4%;
+  padding: 0.2% 4%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 2px dotted gold;
   background-color: #212121;
   z-index: -1;
 }
@@ -172,10 +171,9 @@ p {
 .navigation .h1 h1 {
   font-family: 'Righteous', cursive;
   font-size: 5rem;
-  color: white;
 }
 .navigation .h1 h1:hover {
-  text-shadow: 0 0 20px #FF0000, 0 0 20px #0000FF;
+  text-shadow: 0 0 20px #9e0606;
 }
 .navigation nav {
   width: 60%;
@@ -199,7 +197,7 @@ p {
   align-items: flex-start;
 }
 .navigation nav a:hover {
-  text-shadow: 0 0 20px #FF0000, 0 0 20px #0000FF;
+  text-shadow: 0 0 20px #FF0000, 0 0 20px red;
 }
 @media (max-width: 800px) {
   .navigation nav a {
@@ -392,6 +390,11 @@ button.learn-more .button-text {
   line-height: 1.6;
   text-align: center;
 }
+
+.container-about {
+  display: flex;
+  height: 92.5vh;
+
 button:hover .circle {
   width: 100%;
 }
@@ -531,14 +534,14 @@ html {
 .container {
   height: 95vh;
 }
-.container .hero {
+.container-about .hero {
   width: 100%;
   height: 100%;
   max-width: 100%;
   max-height: 100%;
   position: relative;
 }
-.container .hero::before {
+.container-about .hero::before {
   background-image: url(/img/bg-6.jpg);
   background-size: cover;
   content: "";
@@ -551,7 +554,7 @@ html {
   z-index: -2;
   opacity: 1;
 }
-.container .hero::after {
+.container-about .hero::after {
   background-color: #563d7c;
   content: "";
   display: block;
@@ -563,12 +566,12 @@ html {
   z-index: -1;
   opacity: 0.4;
 }
-.container .hero-message {
+.container-about .hero-message {
   color: white;
   text-shadow: #343a40 2px 2px;
   position: relative;
 }
-.container .hero-message::before {
+.container-about .hero-message::before {
   content: "";
   display: block;
   position: absolute;
@@ -579,13 +582,13 @@ html {
   opacity: 0.4;
   background-color: #343a40;
 }
-.container .hero-title,
-.container .hero-sub-title {
+.container-about .hero-title,
+.container-about .hero-sub-title {
   width: 100%;
   display: block;
   text-align: center;
 }
-.container .hero-title {
+.container-about .hero-title {
   margin: 3% 0;
   text-transform: uppercase;
 }
