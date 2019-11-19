@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Calistoga', cursive;
-  color: black;
+  color: white;
 }
 h1,
 h2,
@@ -144,7 +144,7 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
   font-size: 3rem;
-  color: black;
+  color: white;
 }
 h2 {
   font-size: 3.2rem;
@@ -158,11 +158,10 @@ p {
 }
 .navigation {
   width: 100%;
-  padding: 2% 4%;
+  padding: 0.2% 4%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 2px dotted gold;
   background-color: #212121;
   z-index: -1;
 }
@@ -172,10 +171,9 @@ p {
 .navigation .h1 h1 {
   font-family: 'Righteous', cursive;
   font-size: 5rem;
-  color: white;
 }
 .navigation .h1 h1:hover {
-  text-shadow: 0 0 20px #FF0000, 0 0 20px #0000FF;
+  text-shadow: 0 0 20px #9e0606;
 }
 .navigation nav {
   width: 60%;
@@ -199,7 +197,7 @@ p {
   align-items: flex-start;
 }
 .navigation nav a:hover {
-  text-shadow: 0 0 20px #FF0000, 0 0 20px #0000FF;
+  text-shadow: 0 0 20px #FF0000, 0 0 20px red;
 }
 @media (max-width: 800px) {
   .navigation nav a {
@@ -236,7 +234,7 @@ p {
 }
 .container-about {
   display: flex;
-  height: 90vh;
+  height: 92.5vh;
 }
 .container-about .hero {
   width: 100%;
