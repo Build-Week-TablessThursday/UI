@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  background-color: black;
 }
 html,
 body {
@@ -165,8 +166,20 @@ p {
   background-color: #212121;
   z-index: -1;
 }
+@media (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+    margin: 1% 0;
+  }
+}
 .navigation .h1 {
   width: 30%;
+}
+@media (max-width: 500px) {
+  .navigation .h1 {
+    width: 100%;
+    text-align: center;
+  }
 }
 .navigation .h1 h1 {
   font-family: 'Righteous', cursive;
@@ -175,8 +188,17 @@ p {
 .navigation .h1 h1:hover {
   text-shadow: 0 0 20px #9e0606;
 }
+@media (max-width: 800px) {
+  .navigation .h1 h1 {
+    font-size: 4rem;
+  }
+}
+.navigation .h1 h1 a {
+  width: 100%;
+  justify-content: center;
+}
 .navigation nav {
-  width: 60%;
+  width: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,6 +206,12 @@ p {
 @media (max-width: 800px) {
   .navigation nav {
     width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    flex-direction: column;
+    width: 100%;
   }
 }
 .navigation nav a {
@@ -201,7 +229,12 @@ p {
 }
 @media (max-width: 800px) {
   .navigation nav a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .navigation nav a {
+    padding: 4% 0;
   }
 }
 .navigation {
@@ -235,6 +268,16 @@ p {
 .container-about {
   display: flex;
   height: 92.5vh;
+}
+@media (max-width: 800px) {
+  .container-about {
+    height: 94.5vh;
+  }
+}
+@media (max-width: 500px) {
+  .container-about {
+    height: 95.5vh;
+  }
 }
 .container-about .hero {
   width: 100%;

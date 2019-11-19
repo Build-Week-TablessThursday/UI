@@ -4,21 +4,42 @@
     .flexbox (space-between, baseline);
     background-color: #212121;
     z-index: -1;
+    @media @phone{
+        flex-direction: column;
+        margin: 1% 0;
+    }
     .h1{
         width: 30%;
+        @media @phone{
+            width: 100%;
+            text-align: center;
+        }
         h1{
         font-family: @tabless-font;
         font-size: 5rem;
+       
             &:hover {
                 text-shadow: 0 0 20px rgb(158, 6, 6);
             }
-        }
-    }
+            @media @tablet{
+                font-size: 4rem;
+            }
+          
+            a{
+                width: 100%;
+                justify-content: center;
+            }
+        }//end of h1
+    }//end of h1 class
     nav {
-        width: 60%;
+        width: 65%;
         .flexbox (center, center);
         @media @tablet {
             width: 80%;
+        }
+        @media @phone{
+            flex-direction: column;
+            width: 100%;
         }
         a {
             width: 100%;
@@ -31,7 +52,10 @@
                 text-shadow: 0 0 20px #FF0000, 0 0 20px red;
             }
             @media @tablet {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
+            }
+            @media @phone {
+                padding: 4% 0;
             }
         }//end of a
     }//end of nav
