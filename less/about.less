@@ -13,6 +13,8 @@
         max-width: 100%;
         max-height: 100%;
         position: relative;
+        display: flex;
+        align-items: center;
     }
     .hero::before {
         background-image: url(/img/bg-6.jpg);
@@ -41,9 +43,10 @@
     }
  
     .hero-message {
-        color: white;
         text-shadow: #343a40 2px 2px;
         position: relative;
+        align-items: center;
+        width: 100%;
     }
     .hero-message::before {
         content: "";
@@ -51,7 +54,7 @@
         position: absolute;
         margin-left: 0;
         min-width: 100%;
-        min-height: 12em;
+        min-height: 15em;
         z-index: -1;
         opacity: 0.4;
         background-color: #343a40;
