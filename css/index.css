@@ -144,8 +144,15 @@ body {
   color: white;
 }
 body {
+<<<<<<< HEAD
+  font-family: Verdana, sans-serif;
+}
+body {
+  background-color: #212121;
+=======
   background-color: #212121;
   font-family: Verdana, sans-serif;
+>>>>>>> b5e78ab884f0a0eb167567889e2bc03fd350b042
 }
 h1,
 h2,
