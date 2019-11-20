@@ -23,9 +23,8 @@
         h1{
         font-family: @tabless-font;
         font-size: 4rem;
-       
             &:hover {
-                text-shadow: 0 0 20px rgb(158, 6, 6);
+                text-shadow: 0 0 20px rgb(212, 109, 109);
             }
             @media @tablet{
                 font-size: 2.1rem;
@@ -65,5 +64,15 @@
                 padding: 4% 0;
             }
         }//end of a
+        @media @tablet{
+            a:active {
+                background-color: purple;
+            }
+        }
+        @media @phone{
+            a:active {
+                background-color: purple;
+            }
+        }
     }//end of nav
 }//end of navigation
