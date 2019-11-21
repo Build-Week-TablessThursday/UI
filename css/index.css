@@ -207,7 +207,6 @@ button {
     cursor: pointer;
     position: absolute;
     right: 5px;
-    display: none;
   }
   .navigation .bar1,
   .navigation .bar2,
@@ -284,6 +283,7 @@ button {
   .navigation nav {
     flex-direction: column;
     width: 100%;
+    display: none;
   }
 }
 .navigation nav a {
@@ -308,6 +308,7 @@ button {
 @media (max-width: 500px) {
   .navigation nav a {
     padding: 4% 0;
+    margin: auto;
   }
 }
 @media (max-width: 800px) {

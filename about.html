@@ -20,22 +20,26 @@
           <h1><a href="index.html">Tabless</a></h1>
         </div>
 
-        <div class="hamburger" onclick="myFunction(this), menuFunction()">
+        <div class="hamburger" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
 
         <script>
-            function menuFunction() {
-                document.getElementsByClassName("hamburger2").style.display = "none";
-            }   
+            let count = 0;
             function myFunction(x) {
+                count++;
+                if(count%2===0){
+                    hamburger2.style.display='none';
+                }else{
+                    hamburger2.style.display='block';
+                }
                 x.classList.toggle("change");
             }
         </script>
 
-        <nav class="hamburger2">
+        <nav id="hamburger2">
           <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
           <a href="#">Blog</a>
