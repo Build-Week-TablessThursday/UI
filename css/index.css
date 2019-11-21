@@ -219,16 +219,25 @@ button {
   font-size: 4rem;
 }
 .navigation .h1 h1:hover {
-  text-shadow: 0 0 20px #d46d6d;
+  text-shadow: 0 0 100px #5b38aa, 0 0 100px #5b38aa;
 }
 @media (max-width: 800px) {
   .navigation .h1 h1 {
     font-size: 2.1rem;
   }
+  .navigation .h1 h1 a:active {
+    background-color: #5b38aa;
+  }
+}
+@media (max-width: 500px) {
+  .navigation .h1 h1 {
+    width: 100%;
+  }
 }
 .navigation .h1 h1 a {
   width: 100%;
   justify-content: center;
+  color: #9d2fc9;
 }
 .navigation nav {
   width: 75%;
@@ -258,7 +267,7 @@ button {
   align-items: flex-start;
 }
 .navigation nav a:hover {
-  text-shadow: 0 0 20px #FF0000, 0 0 20px red;
+  text-shadow: 0 0 20px red, 0 0 20px red;
 }
 @media (max-width: 800px) {
   .navigation nav a {
@@ -643,11 +652,22 @@ button:hover .button-text {
   opacity: 0.4;
   background-color: #343a40;
 }
+@media (max-width: 500px) {
+  .container-about .hero-message::before {
+    min-height: 11em;
+  }
+}
 .container-about .hero-title,
 .container-about .hero-sub-title {
   width: 100%;
   display: block;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .container-about .hero-title,
+  .container-about .hero-sub-title {
+    font-size: 2.6rem;
+  }
 }
 .container-about .hero-title {
   margin: 3% 0;
@@ -671,6 +691,11 @@ button:hover .button-text {
 .profile .Nicholas h2 {
   padding: 3px 0;
   text-align: center;
+}
+@media (max-width: 1055px) {
+  .profile .Nicholas h2 {
+    font-size: 2.6rem;
+  }
 }
 @media (max-width: 500px) {
   .profile .Nicholas h2 {
@@ -712,6 +737,11 @@ button:hover .button-text {
   padding: 3px 0;
   text-align: center;
 }
+@media (max-width: 1055px) {
+  .profile .Harrison h2 {
+    font-size: 2.6rem;
+  }
+}
 @media (max-width: 500px) {
   .profile .Harrison h2 {
     font-size: 2.4rem;
@@ -751,6 +781,11 @@ button:hover .button-text {
 .profile .Christopher h2 {
   padding: 3px 0;
   text-align: center;
+}
+@media (max-width: 1055px) {
+  .profile .Christopher h2 {
+    font-size: 2.6rem;
+  }
 }
 @media (max-width: 500px) {
   .profile .Christopher h2 {
@@ -792,6 +827,11 @@ button:hover .button-text {
   padding: 3px 0;
   text-align: center;
 }
+@media (max-width: 1055px) {
+  .profile .Jordan h2 {
+    font-size: 2.6rem;
+  }
+}
 @media (max-width: 500px) {
   .profile .Jordan h2 {
     font-size: 2.4rem;
@@ -830,6 +870,11 @@ button:hover .button-text {
 .profile .Michelangelo h2 {
   padding: 3px 0;
   text-align: center;
+}
+@media (max-width: 1055px) {
+  .profile .Michelangelo h2 {
+    font-size: 2.6rem;
+  }
 }
 @media (max-width: 500px) {
   .profile .Michelangelo h2 {
@@ -871,6 +916,11 @@ button:hover .button-text {
   padding: 3px 0;
   text-align: center;
 }
+@media (max-width: 1055px) {
+  .profile .Aaron h2 {
+    font-size: 2.6rem;
+  }
+}
 @media (max-width: 500px) {
   .profile .Aaron h2 {
     font-size: 2.4rem;
@@ -909,6 +959,11 @@ button:hover .button-text {
 .profile .Otabek h2 {
   padding: 3px 0;
   text-align: center;
+}
+@media (max-width: 1055px) {
+  .profile .Otabek h2 {
+    font-size: 2.6rem;
+  }
 }
 @media (max-width: 500px) {
   .profile .Otabek h2 {
