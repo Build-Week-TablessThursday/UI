@@ -138,6 +138,9 @@ html {
   line-height: 1.5;
   color: #444;
 }
+.hidden {
+  display: none;
+}
 html,
 body {
   font-family: 'Calistoga', cursive;
@@ -721,6 +724,18 @@ button:hover .button-text {
   position: relative;
   display: flex;
   align-items: center;
+}
+.container-about .hero .sec1 a span {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
 }
 .container-about .hero::before {
   background-image: url(/img/bg-6.jpg);
