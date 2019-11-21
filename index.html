@@ -23,49 +23,45 @@
           <a href="#">Sign In</a>
         </nav>        
     </section>
-    <div class="background-image">  
-            <div class="slideshow-container">
-            
-            <div class="mySlides fade">
-              <!-- <div class="numbertext">1 / 3</div> -->
-              <img src="./img/bg-2.png" style="width:100%">
-              <!-- <div class="text">Caption Text</div> -->
-            </div>    
-            <div class="mySlides fade">
-              <!-- <div class="numbertext">2 / 3</div> -->
-              <img src="./img/bg-3.jpg" style="width:100%">
-              <!-- <div class="text">Caption Two</div> -->
-            </div>
-            
-            <div class="mySlides fade">
-              <!-- <div class="numbertext">3 / 3</div> -->
-              <img src="./img/bg-4.jpg" style="width:100%">
-              <!-- <div class="text">Caption Three</div> -->
-            </div>
-            
-            </div>
-            <br>
-            
-            <div class="dots" style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-    </div>
-
-
-
 
 
     <div class="container">
+        <!-- background slide show -->
+    <div class="background-image">  
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">1 / 3</div> -->
+          <img src="./img/bg-2.png" style="width:100%">
+          <!-- <div class="text">Caption Text</div> -->
+        </div>    
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">2 / 3</div> -->
+          <img src="./img/bg-3.jpg" style="width:100%">
+          <!-- <div class="text">Caption Two</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">3 / 3</div> -->
+          <img src="./img/bg-4.jpg" style="width:100%">
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+        
+        </div>
+        <br>
+        
+        <div class="dots" style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+    </div>
         <!-- <img src="./img/bg-5.jpg" alt=""> -->
+        <!-- main page -->
         <section class="middle">
-            <h1>Call To Action</h1>
+            <h1>Get Things Done!</h1>
             <p>People often have a million tabs up and lose track of what they were doing. This website lets you organize them in to-do lists and make a note of why it was important. Makes it easy to pick up where you left off.</p>
-        </section><!--end of middle-->
-
-
-
+        </section><!--end of main page-->
 
 
           <div id="button-container">
@@ -78,6 +74,7 @@
                     <span class="button-text">Sign Up</span>
                   </button>
               </div>
+
               <div class="button">
                 <button class="learn-more">
                   <span class="circle">
@@ -86,12 +83,87 @@
                   <span class="button-text">Login</span>
                 </button>
               </div>
-          </div>   
-          <footer>
-              <div class="hover"><span>Follow us</span><a class="social-link" href=" target="_blank><i class="fa fa-twitter"></i></a><a class="social-link" href="" target="_blank"><i class="fa fa-facebook"></i></a><a class="social-link"
-                href="" target="_blank"><i class="fa fa-snapchat"></i></a><a class="social-link" href="" target="_blank"><i class="fa fa-instagram"></i></a></div>
-            </footer>
+          </div>  
+          <!-- actual content -->
     </div><!--end of container--> 
+
+
+
+
+
+    <div class="actual-content">
+        <div class="second-background-image">
+            <img src="./img/ten.jpg" alt="">
+        </div>
+        <section>
+          <div>
+            <h3>Our Product, what is it?</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur 
+            adipisicing elit. Debitis inventore voluptatum iste distinctio. 
+            Excepturi odit corrupti rem inventore, repudiandae sit ipsa, tempora 
+            porro quis nihil vel suscipit itaque repellat facilis.Debitis inventore voluptatum iste distinctio. 
+            Excepturi odit corrupti rem inventore, repudiandae sit ipsa, tempora 
+            porro quis nihil vel suscipit itaque repellat facili
+          </p>
+        </div>
+        <div>
+          <h3>How does it help you?</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Debitis explicabo id cum voluptatem nulla consequatur, autem 
+            quibusdam reiciendis nesciunt sequi excepturi voluptates omnis 
+            numquam veritatis voluptas totam nisi tenetur repellat.
+          </p>
+        </div>
+        </section>
+      </div>
+    </div>
+
+
+
+
+
+
+  <div class="outro">
+    <div class="third-background-image">
+      <img src="./img/six.jpg" alt="">
+    </div>
+  <h3>Let us know what you think </h3>
+  <div class="form-container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Email</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your email..">
+        
+
+        <label for="subject">Comment</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Send">
+      </form>
+  </div>
+  </div>
+
+
+
+    <footer>
+        <p>©opy rights 2019</p>
+    </footer>
+    <!-- SHARE BUTTON -->
+    <div id ="share" class="hover"><span style="font-size:26px" >SHARE&nbsp;<i style="font-size:30px" class="fa">&#xf064;</i></span>
+      <a class="social-link" href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a class="social-link" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a class="social-link" href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat"></i></a>
+      <a class="social-link" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+    </div> <!-- end of share button -->
+
+
+
+
     <script>
             var slideIndex = 0;
             showSlides();
