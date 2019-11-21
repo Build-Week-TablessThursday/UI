@@ -699,6 +699,50 @@ button:hover .button-text {
     width: 33%;
   }
 }
+@media (max-width: 500px) {
+  .container .middle h1 {
+    font-size: 3.5rem;
+  }
+  .container .middle p {
+    font-size: 1rem;
+    padding-bottom: 2%;
+  }
+  #button-container .button button.learn-more {
+    width: 7rem;
+  }
+  button.learn-more .button-text {
+    font-size: 0.8rem;
+    padding: 12%;
+  }
+  .hover {
+    height: 50px;
+  }
+  #share {
+    width: 30%;
+  }
+  .hover .social-link {
+    width: 22%;
+    font-size: 21px;
+  }
+  .actual-content section {
+    flex-direction: column;
+    margin: 5% 0% 25% 0%;
+  }
+  .actual-content section h3 {
+    font-size: 2rem;
+    padding: 0% 5% 0% 10%;
+  }
+  .actual-content section p {
+    font-size: 1rem;
+    padding: 0% 15% 0% 10%;
+  }
+  .outro h3 {
+    font-size: 2rem;
+  }
+  #wide-img {
+    content: url("../img/two.jpg");
+  }
+}
 .container-about {
   display: flex;
   height: 90.5vh;
