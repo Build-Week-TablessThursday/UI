@@ -8,14 +8,38 @@
     <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Tabless testing</title>
+    <title>Tabless</title>
 </head>
 <body>
     <section class="navigation">
+        <span class="hidden">
+            <a href="#content">Skip to content</a>
+        </span>
+
         <div class="h1">
           <h1><a href="index.html">Tabless</a></h1>
         </div>
-        <nav>
+
+        <div class="hamburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <script>
+            let count = 0;
+            function myFunction(x) {
+                count++;
+                if(count%2===0){
+                    hamburger2.style.display='none';
+                }else{
+                    hamburger2.style.display='block';
+                }
+                x.classList.toggle("change");
+            }
+        </script>
+
+        <nav id="hamburger2">
           <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
           <a href="#">Blog</a>
@@ -25,7 +49,7 @@
     </section>
 
 
-    <div class="container">
+    <div class="container" id="content">
         <!-- background slide show -->
     <div class="background-image">  
         <div class="slideshow-container">
