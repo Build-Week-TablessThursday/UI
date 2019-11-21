@@ -58,15 +58,116 @@
         z-index: -1;
         opacity: 0.4;
         background-color: #343a40;
+        @media @phone {
+            min-height: 11em;
+        }
     }
     .hero-title,
     .hero-sub-title {
         width: 100%;
         display: block;
         text-align: center;
+        @media @phone {
+            font-size: 2.6rem;
+        }
     }
     .hero-title {
         margin: 3% 0;
         text-transform: uppercase;
     }
 }//end of container-about
+
+.profile {
+    .flex();
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .Nicholas {
+        .aboutBox ();
+        img {
+            .profile-img ();
+        }
+        .links {
+            .flex();
+            a {
+                padding: 2% 5%;
+                width: 79px;
+                
+            }
+        }
+    }//end of Nicholas
+    .Harrison {
+        .aboutBox ();
+        img {
+            .profile-img ();
+        }
+        .links {
+            .flex();
+            a {
+                padding: 2% 5%;
+                width: 90px;
+            }
+        }
+    }//end of Harrison
+    .Christopher {
+        .aboutBox ();
+        img {
+            .profile-img ();
+        }
+        .links {
+            .flex();
+            a {
+                padding: 2% 5%;
+                width: 79px;
+            }
+        }
+    }//end of Christopher
+    .Jordan {
+        .aboutBox ();
+        img {
+            .profile-img ();
+        }
+        .links {
+            .flex();
+            a {
+                padding: 2% 5%;
+            }
+        }
+    }//end of Jordan
+    .Michelangelo {
+        .aboutBox ();
+        img {
+            .profile-img ();
+        }
+        .links {
+            .flex();
+            a {
+                padding: 2% 5%;
+                width: 79px;
+            }
+        }
+    }//end of Michelangelo
+    .Aaron {
+        .aboutBox ();
+        img {
+            .profile-img ();
+        }
+        .links {
+            .flex();
+            a {
+                padding: 2% 5%;
+            }
+        }
+    }//end of Aaron
+    .Otabek {
+        .aboutBox ();
+        img {
+            .profile-img ();
+        }
+        .links {
+            .flex();
+            a {
+                padding: 2% 5%;
+            }
+        }
+    }//end of Otabek
+}//end of profile

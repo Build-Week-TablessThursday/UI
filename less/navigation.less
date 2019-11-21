@@ -23,17 +23,23 @@
         h1{
         font-family: @tabless-font;
         font-size: 4rem;
-       
             &:hover {
-                text-shadow: 0 0 20px rgb(158, 6, 6);
+                text-shadow: 0 0 100px @shadow-color, 0 0 100px @shadow-color;
             }
             @media @tablet{
                 font-size: 2.1rem;
+                a:active {
+                    background-color: @shadow-color;
+                }
+            }
+            @media @phone{
+                width: 100%;
             }
           
             a{
                 width: 100%;
                 justify-content: center;
+                color: rgb(157, 47, 201);
             }
         }//end of h1
     }//end of h1 class
@@ -55,7 +61,7 @@
             font-size: 1.25rem;
             .flexbox (center, flex-start);
             &:hover {
-                text-shadow: 0 0 20px #FF0000, 0 0 20px red;
+                text-shadow: 0 0 20px red, 0 0 20px red;
             }
             @media @tablet {
                 font-size: 1rem;
@@ -65,5 +71,15 @@
                 padding: 4% 0;
             }
         }//end of a
+        @media @tablet{
+            a:active {
+                background-color: purple;
+            }
+        }
+        @media @phone{
+            a:active {
+                background-color: purple;
+            }
+        }
     }//end of nav
 }//end of navigation
