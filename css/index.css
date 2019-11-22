@@ -743,6 +743,9 @@ button:hover .button-text {
   }
 }
 @media (max-width: 500px) {
+  .actual-content section div {
+    width: 100%;
+  }
   .container .middle h1 {
     font-size: 3.5rem;
   }
