@@ -825,7 +825,7 @@ button:hover .button-text {
   box-sizing: border-box;
 }
 .container-about .hero::before {
-  background-image: url(./img/bg-6.jpg);
+  background-image: url(/img/bg-6.jpg);
   background-size: cover;
   content: "";
   display: block;
