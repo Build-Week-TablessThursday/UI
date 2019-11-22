@@ -183,6 +183,11 @@ button {
   font-size: inherit;
   font-family: inherit;
 }
+@media (max-width: 800px) {
+  p {
+    font-size: 1rem;
+  }
+}
 .navigation {
   width: 100%;
   padding: 0.2% 4%;
@@ -729,6 +734,13 @@ button:hover .button-text {
   #share {
     width: 33%;
   }
+  .actual-content section h3 {
+    font-size: 1.6rem;
+    margin: 5%;
+  }
+  .actual-content section div {
+    width: 50%;
+  }
 }
 @media (max-width: 500px) {
   .container .middle h1 {
@@ -810,7 +822,7 @@ button:hover .button-text {
   box-sizing: border-box;
 }
 .container-about .hero::before {
-  background-image: url(/img/bg-6.jpg);
+  background-image: url(./img/bg-6.jpg);
   background-size: cover;
   content: "";
   display: block;
