@@ -461,6 +461,8 @@ footer p {
   color: white;
   padding: 12px 20px;
   border: none;
+  width:150px;
+  height: 50px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -500,16 +502,22 @@ footer p {
 }
 .actual-content section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #a07da05c;
   justify-content: center;
 }
 .actual-content section h3 {
   text-shadow: -5px 3px 5px black;
   margin-bottom: 5%;
+  width:100%;
+  font-size: 2.3em;
 }
 .actual-content section p {
   text-shadow: -5px 6px 5px black;
+  padding: 0px 15px;
+}
+.actual-content section div{
+  margin: 30px 0px;
 }
 .outro {
   width: 100%;
@@ -728,14 +736,13 @@ button:hover .button-text {
   }
   .actual-content section h3 {
     font-size: 1.6rem;
-  }
-  .actual-content section div {
-    width: 50%;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
   .actual-content section div {
     width: 100%;
+    margin: 25px 0px;
   }
   .container .middle h1 {
     font-size: 3em;
@@ -754,10 +761,13 @@ button:hover .button-text {
     flex-direction: column;
   }
   .actual-content section h3 {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
   }
   .actual-content section p {
     font-size: 1rem;
+    text-align: center;
+    margin:0px 10px;
   }
   .outro h3 {
     font-size: 2rem;
@@ -1185,6 +1195,15 @@ button:hover .button-text {
   .container .middle p{
     font-size: 1.5em;
     padding: 20px 30px;
+  }
+  .actual-content section{
+    flex-direction: row;
+  }
+  .actual-content section p{
+    padding:0px;
+  }
+  .actual-content section div{
+    margin: 10px 20px;
   }
 }
 
