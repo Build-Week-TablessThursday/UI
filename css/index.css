@@ -484,12 +484,13 @@ footer p {
 .container .middle h1 {
   margin: 2.5%;
   color: white;
-  font-size: 5rem;
+  font-size: 3.5rem;
   text-align: center;
   text-shadow: -5px 6px 5px black;
 }
 .container .middle p {
-  padding: 2% 13% 0% 13%;
+  font-size:1.3em;
+  padding: 25px 15px 25px 15px;
   text-shadow: -5px 6px 5px black;
 }
 .actual-content {
@@ -502,9 +503,6 @@ footer p {
   flex-direction: row;
   background-color: #a07da05c;
   justify-content: center;
-}
-.actual-content section div {
-  margin: 5%;
 }
 .actual-content section h3 {
   text-shadow: -5px 3px 5px black;
@@ -527,14 +525,12 @@ footer p {
 }
 #button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
 }
-#button-container .button {
-  margin: 0% 5% 0% 5%;
-}
+
 #button-container .button button.learn-more {
-  width: 12rem;
+  width: 150px;
   height: auto;
 }
 button.learn-more {
@@ -604,7 +600,6 @@ button:hover .button-text {
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 20%;
   margin: 5% 3% 3% 5%;
 }
 .hover {
@@ -731,12 +726,8 @@ button:hover .button-text {
   .hover:after {
     display: none;
   }
-  #share {
-    width: 33%;
-  }
   .actual-content section h3 {
     font-size: 1.6rem;
-    margin: 5%;
   }
   .actual-content section div {
     width: 50%;
@@ -747,24 +738,13 @@ button:hover .button-text {
     width: 100%;
   }
   .container .middle h1 {
-    font-size: 3.5rem;
-  }
-  .container .middle p {
-    font-size: 1rem;
-    padding-bottom: 2%;
-  }
-  #button-container .button button.learn-more {
-    width: 7rem;
-  }
-  button.learn-more .button-text {
-    font-size: 0.8rem;
-    padding: 12%;
+    font-size: 3em;
   }
   .hover {
     height: 50px;
   }
   #share {
-    width: 30%;
+    width: 200px;
   }
   .hover .social-link {
     width: 22%;
@@ -772,15 +752,12 @@ button:hover .button-text {
   }
   .actual-content section {
     flex-direction: column;
-    margin: 5% 0% 25% 0%;
   }
   .actual-content section h3 {
     font-size: 2rem;
-    padding: 0% 5% 0% 10%;
   }
   .actual-content section p {
     font-size: 1rem;
-    padding: 0% 15% 0% 10%;
   }
   .outro h3 {
     font-size: 2rem;
@@ -1203,4 +1180,33 @@ button:hover .button-text {
 }
 .profile .Otabek .links a {
   padding: 2% 5%;
+}
+@media (min-width:700px){
+  .container .middle p{
+    font-size: 1.5em;
+    padding: 20px 30px;
+  }
+}
+
+@media (min-width:900px){
+  .container .middle h1{
+    font-size: 6em;
+  }
+  .container .middle p{
+    font-size: 2em;
+    padding: 20px 30px;
+  }
+}
+
+@media (min-width:1200px){
+  .container .middle p{
+    padding: 20px 50px;
+  }
+}
+
+
+@media (min-width:1500px){
+  .container .middle p{
+    padding: 20px 100px;
+  }
 }
